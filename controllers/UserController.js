@@ -1,5 +1,5 @@
 const Users=require("../userModel/UserModel.js");
-const bcrypt=require("bcrypt");
+const bcrypt=require("bcryptjs");
 const cloudinary = require("cloudinary");
 exports.signin=async(req,res,next)=>{
 try{
