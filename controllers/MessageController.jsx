@@ -43,7 +43,7 @@ exports.addMessage=async(req,res,next)=>{
     toImage,
     
   })
-  await Upload.updateOne({_id},{$set:{view:view+1}})
+  
   if(data) return res.json({msg:"Message added successfully",status:true})
   return res.json({msg:"Failed to add message",status:false});
  }catch(err){
