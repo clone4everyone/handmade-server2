@@ -1,4 +1,4 @@
-
+const Upload=require("../userModel/ProductModel.js");
 
 const cloudinary = require("cloudinary");
 
