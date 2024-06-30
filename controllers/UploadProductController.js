@@ -184,7 +184,7 @@ return res.json({data,status:true});
     try{
      const {_id}=req.body;
      const data=await Upload.findOne({_id});
-     await Upload.updataOne({_id},{$set:{views:views+1}})
+     await Upload.updataOne({_id},{ $inc: { views: 1 } })
     return res.json({status:true,data});
     }catch(err){
       next(err)
